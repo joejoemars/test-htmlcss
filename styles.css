@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Karla:wght@500&family=Oxygen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
+:root {
+	--light-background-color: white;
+	--light-background-color-2: rgb(245,245,245);
+	--light-text-color: black;
+
+	--dark-background-color: black;
+	--dark-background-color-2: rgb(10,10,10);
+	--dark-text-color: white;
+
+	--accent-color-red: rgb(226, 53, 105);
+	--accent-color-link: rgb(53, 114, 226);
+	--accent-color-link-visited: rgb(148, 53, 226);
+}
+
+body {
+	background: var(--light-background-color);
+}
+
+a, p q, h1, h2, code {
+	color: var(--light-text-color);
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+
+	body {
+		background: var(--light-background-color);
+	}
+
+	a, p, q, h1, h2, code {
+		color: var(--light-text-color);
+	}
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+	body {
+		background: var(--dark-background-color);
+	}
+
+	a, p, q, h1, h2, code {
+		color: var(--dark-text-color);
+	}
+
+}
+
+code {
+	background-color: var(--dark-background-color-2);
+	outline: thick solid var(--accent-color-red);
+}
